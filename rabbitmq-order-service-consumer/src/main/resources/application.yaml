@@ -1,0 +1,18 @@
+server:
+  port: 8085
+
+spring:
+  rabbitmq:
+    host: rabbitmq398
+    port: 5672
+    username: guest
+    password: guest
+  datasource:
+    url: jdbc:mysql://mysql8027:3306/orders_db?serverTimezone=America/Mexico_City&allowPublicKeyRetrieval=true&useSSL=false
+    username: root
+    password: toor
+    driverClassName: com.mysql.cj.jdbc.Driver
+  jpa:
+    databasePlatform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddlAuto: update
